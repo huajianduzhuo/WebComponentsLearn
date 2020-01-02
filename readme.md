@@ -1,5 +1,7 @@
 # Web Components
 
+MDN: [https://developer.mozilla.org/zh-CN/docs/Web/Web_Components](https://developer.mozilla.org/zh-CN/docs/Web/Web_Components)
+
 自定义 HTML 标签，必须使用 `-` 连字符，以区分于原生 HTML标签。
 
 ## 定义自定义元素

@@ -1,6 +1,10 @@
 class UserCard extends HTMLElement {
   constructor () {
     super()
+  }
+
+  connectedCallback () {
+    console.log('connectedCallback')
     let image = document.createElement('img')
     image.classList.add('image')
 
@@ -17,6 +21,18 @@ class UserCard extends HTMLElement {
 
     wrap.append(name, works)
     this.append(image, wrap)
+  }
+
+  disconnectedCallback () {
+    console.log('disconnectedCallback')
+  }
+
+  adoptedCallback () {
+    console.log('adoptedCallback')
+  }
+
+  attributeChangedCallback () {
+    console.log('attributeChangedCallback')
   }
 }
 
